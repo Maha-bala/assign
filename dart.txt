@@ -1,0 +1,685 @@
+void main() {
+  int a=23;
+  double b=21.4;
+  bool c=true;
+  String d='Hello i am dart';
+  
+  dynamic x1=400;
+  int x2=60;
+  
+  //operators
+  var arith=x1~/x2;
+  print(arith);
+  
+  //relational 
+  var rel=x1!=x2;
+  print(rel);
+  
+  //logical
+  var log=!(x1<0 || x2<0);
+  print(log);
+  
+  //assignment
+  print(x1);
+  x1/=x2;
+  print(x1);
+  
+  //conditional / ternary
+  int age=15;
+  var con=age>18?"eligible":"not eligible";
+  print(con);
+  
+  //Null safety
+  int? p;
+  print(p);
+  
+  //Null aware ??
+  int? s;
+  int t=s??100;
+  print(t);
+  
+  //final 
+ final int f;
+ f=60;
+  print(f);
+  
+   const int g=90;
+//  g=60;
+  print(g);
+  
+  
+  
+ //dynamic g=67;
+ // print(g);
+ // g="gjkjkj";
+  //print(g);
+ }
+
+
+
+
+ void main(){
+   var myMark=15;
+   if(myMark>50){
+     print("Pass");
+   }
+   else{
+     print("fail");
+   }
+   
+  // else if ladder
+   var mark=18;
+   if(mark>=90){
+     print("Excellent");
+     
+   }
+   else if(mark>=80){
+     print("good");
+   }
+    else if(mark>=70 && mark<79){
+     print("average");
+   }
+       else if(mark>=60){
+     print("ok");
+   }
+       else if(mark>=50){
+     print("needs improvement");
+   }
+   else{
+     print("fail");
+   }
+   
+      
+//nested if
+   var username="Test@gmail.com";
+   var password="Test123";
+  if(username=="Test@gmail.com" && password=="Test123"){
+    print("Login success");
+  } 
+   else{
+     print("Invalid credentials");
+   }
+   
+  // switch
+   var today="fri";
+   switch(today){
+       case "Monday":{
+         print("Day1");
+         break;
+     
+   }
+          case "tues":{
+         print("Day1");
+            break;
+     
+   }
+       
+          case "wed":{
+         print("Day3");
+            break;
+     
+   }
+         
+          case "thurs":{
+         print("Day4");
+            break;
+     
+   }
+          case "fri":{
+         print("Day5");
+            break;
+     
+   }
+     default:{
+       print("weekend");
+       break;
+     }
+       
+ }
+ }
+
+
+
+ void main(){
+   var myMark=15;
+   if(myMark>50){
+     print("Pass");
+   }
+   else{
+     print("fail");
+   }
+   
+  // else if ladder
+   var mark=18;
+   if(mark>=90){
+     print("Excellent");
+     
+   }
+   else if(mark>=80){
+     print("good");
+   }
+    else if(mark>=70 && mark<79){
+     print("average");
+   }
+       else if(mark>=60){
+     print("ok");
+   }
+       else if(mark>=50){
+     print("needs improvement");
+   }
+   else{
+     print("fail");
+   }
+   
+      
+//nested if
+   var username="Test@gmail.com";
+   var password="Test123";
+  if(username=="Test@gmail.com" && password=="Test123"){
+    print("Login success");
+  } 
+   else{
+     print("Invalid credentials");
+   }
+   
+  // switch
+   var today="fri";
+   switch(today){
+       case "Monday":{
+         print("Day1");
+         break;
+     
+   }
+          case "tues":{
+         print("Day1");
+            break;
+     
+   }
+       
+          case "wed":{
+         print("Day3");
+            break;
+     
+   }
+         
+          case "thurs":{
+         print("Day4");
+            break;
+     
+   }
+          case "fri":{
+         print("Day5");
+            break;
+     
+   }
+     default:{
+       print("weekend");
+       break;
+     }
+       
+  }
+ }
+
+
+
+ void main(){
+   String s="Hello everyone!!!";
+   var s1="hi";
+   print(s.length);
+   print(s.isEmpty);
+   print(s.isNotEmpty);
+   print(s.runtimeType);
+   print(s.toLowerCase());
+   print(s.toUpperCase());
+   print(s.indexOf("z"));
+   
+   print(s.lastIndexOf("o"));
+   print(s.startsWith(" "));
+   print(s.endsWith("!"));
+   print(s1.compareTo(s1));
+   print(s.padLeft(20,"*"));
+   print(s.padRight(s.length+5,"!"));
+   print(s.contains("H"));
+   print(s.replaceAll("everyone!!!","all!!!"));
+   print(s.split(" "));
+   var list=s.split(" ");
+   print(list[0]);
+   print(list.join(" "));
+   print(s.trim());
+   print(s.trimRight());
+   print(s.trimLeft());
+   print(123.toString()+"10");
+   
+   
+ }
+
+
+
+
+ void main(){
+   var a=23.1934;
+   var b="123";
+   print(a.runtimeType);
+   // print(a.isEven);
+   // print(a.isOdd);
+   print(a.isFinite);
+   print(a.isInfinite);
+   print(a.isNaN);
+   print(a.isNegative);
+   print(a is! int);
+   print(a.abs());
+   print(a.ceil());
+   print(a.floor());
+   print(a.round());
+   print(a.remainder(2));
+   print(a.compareTo(100));
+   print(a.toStringAsFixed(6));
+   print(a.toStringAsPrecision(10));
+   print(a.toString());
+   print(a.toInt());
+   print(a.toDouble());
+   print(int.parse(b));
+   print(double.parse(b));
+   
+ }
+
+
+
+
+ void main(){
+  // fixed length list
+   List<int> a=List<int>.filled(6,0);
+   a[0]=98;
+   a[1]=34;
+    a[2]=68;
+  // a[3]=25;
+  //  a[4]=17;
+   a[5]=20;
+   print(a);
+   
+   //growable list
+   List<dynamic> b= [5,2,9,1,8,4];
+   List c=[90];
+   print(b.length);
+   print(b.reversed.toList());
+   print(b.first);
+   print(b[0]);
+   print(b.last);
+   print(b[b.length-1]);
+   print(b.isEmpty);
+   print(b.isNotEmpty);
+   print(c.single);
+   
+   //methods
+   
+   print(b);
+   b.add(12);
+   print(b);
+   b.addAll([20,30,40]);
+   print(b);
+   
+   b.insert(4,100);
+   print(b);
+   b.insertAll(3,[12,32,65,43]);
+   print(b);
+   
+   b[0]=240;
+   print(b);
+   b.replaceRange(6,9,[22,33,44]);
+   print(b);
+   
+   b.remove(2);
+   print(b);
+   b.removeAt(0);
+   print(b);
+   b.removeLast();
+   print(b);
+   b.removeRange(4,10);
+   print(b);
+   
+   //for in
+   
+   for(var x in b){
+     print(x+10);
+   }
+   
+   //forEach
+   b.forEach((x)=>print(x+10));
+   
+   //map
+   
+   var b1=b.map((x)=>x);
+   print(b1.toList());
+   
+   //forloop
+   var newlist=[];
+   for(int i=0;i<b.length;i++){
+     newlist.add(b[i]);
+  //   print(b[i]);
+   }
+   print(newlist);
+   
+ }
+
+
+
+//var a=90;
+//void main(){
+ // if ((a)%2==0)
+//{
+ // print("It is even");
+//}
+//else
+//{
+//  print("It is odd");
+//}
+//}
+
+//var a=1;
+//void main()
+//{
+ // if (a<18)
+ // {
+ //   print("You are not eigible to vote");
+ // }
+ // else
+  //{
+  //  print("You are eligile to vote");
+ // }
+//}
+
+//var a=-0;
+//void main()
+//{
+  //if (a==0)
+  //{
+    //print("It is  zero ");
+  //}
+  //else if(a>=1)
+  //{
+    //print("It is positive");
+  //}
+  //else{
+   // print("It is negative");
+  //}
+//}
+
+
+void main()
+{
+  var a=2025;
+  if (a%4==0)
+  {
+    print("It is a leap year");
+  }
+  else
+  {
+    print("It is not a leap year");
+  }
+  
+}
+
+//void main()
+//{
+  //  int n1 = 95; 
+    //int n2 = 10; 
+   // int n3 = 65; 
+    //var max;
+    
+   // max = (n1 > n2) ? 
+     //     (n1 > n3 ? n1 : n3) : 
+       //   (n2 > n3 ? n2 : n3);
+   // print( "$max");
+//}
+
+//void main()
+//{
+ // int num=13;
+  //for (int i=2;i<=num;i++)
+  //{
+    //if(num%i==0)
+    //{
+      //print("It is prime number");
+    //}
+    
+  //}
+//}
+  //int i=1;
+  //var sum=0;
+
+//void main()
+//{
+//for (i=1;i<=100;i++)
+  //{
+    //sum+=i;
+  //}
+  //}
+
+//void main()
+//{
+  //int i=20;
+  //if(i%2==0)
+  //{
+    //print("It is even");
+  //}
+  //else
+  //{
+    //print("It is odd");
+  //}
+//}
+
+//void main()
+//{
+ //List b= [5,2,9,1,8,4];
+//print(b.reversed.toList());
+
+//}
+
+//void main()
+//{
+  //int i=1;
+  //for(i=1;i<=5;i++)
+  //{
+   // print("$i");
+  //}
+//}
+
+//void main()
+//{
+//int num=10;
+  //int i=1;
+//for(i=1;i<=10;++i){
+  // print('$num*$i=${num*i}');
+ //}
+//}
+
+//void main()
+//{
+  //int a=10;
+  //int b=80;
+  //var cal="+";
+  //switch(cal)
+  //{
+    //case "+":
+     // {
+       // print("The sum of a and b is:${a+b}");
+      //break;
+      //}
+    //case "-":
+     // {
+       // print("The sub of a and b is:${a-b}");
+       //break;
+     //}
+    //case "*":
+     // {
+       // print("The mul of a and b is:${a*b}");
+        //break;
+      //}
+    //case "%":
+      //{
+        //print("The div of a and b is:${a%b}");
+        //break;
+      //}
+    //}
+//}
+
+//void main()
+//{
+  //int factorial = 1;
+//  fact(int value) {
+  //  for (i = value; i > 0; i--) {
+    //  factorial = factorial * i;
+    //}
+  //}
+  //fact(5);
+ // print("Factorial is: $factorial");
+//}
+
+//void main() 
+//{
+  //int a=0;
+  //int b=1;
+  //print(a);
+  //print(b);
+  //for(int i=1;i<10; i++)
+  //{
+   // int c=a+b;
+    //print(c);
+    //a=b;
+    //b=c;
+  //}
+//}
+
+//void main()
+//{
+ // var sal=500000;
+  //if (sal<50000)
+  //{
+   // print("No tax");
+  //}
+  //else if(sal>=50000 || sal<100000)
+ // {
+   // print("Tax 10% and the amount is:${sal*10/100}");
+  //}
+  //else
+  //{
+   // print("Tax 20% and the amount is:${sal*20/100}");
+  //}
+//}
+
+
+ void main(){
+   Map<String,int> a={"Apple":0,"Banana":1,
+                      "Capsicum":3};
+   Map<String,dynamic> b={"Name":"Sachin","Place":"Mumbai",
+                          "address":[{"state":"TN","City":"Cbe"},
+                                     {"Code":600122,"Mobile":908765443}
+                                    ]};
+   print(b);
+   
+   List c=[a,b];
+   print(c);
+   
+   print(b.length);
+   print(b.isEmpty);
+   print(b.isNotEmpty);
+   print(b.keys);
+   print(b.values);
+   print(b["Name"]);
+   print(b["address"]);
+   print(b["address"][1]["Mobile"]);
+   print(b.runtimeType);
+   b.addAll({"Age":50,"Role":"Player"});
+   print(b);
+   print(b.containsKey("Nam_e"));
+   print(b.containsValue("Sachin"));
+   print(b.remove("Role"));
+   print(b);
+   b.forEach((a,b)=>print("$a:$b"));
+   var d=[2,3,1,4,2];
+   d.forEach((a)=>print(a+10));
+ }
+
+ void main(){
+   //Mobile obj1=new Mobile(1000,'black');
+  // obj1.f1();
+ //  Mobile obj2=new Mobile(2000,'White');
+ //  obj2.f2();
+   Mobile obj1=new Mobile();
+   obj1.price=1000;
+   obj1.color='black';
+   obj1.f1();
+   obj1.f2();
+   
+ }
+class Mobile{
+  int? price;
+  String? color;
+  String brand;
+  
+Mobile(int price_,String color_,String brand_){
+  price=price_;
+   color=color_;
+  brand=brand_;
+ } 
+  Mobile.m1(int price_,String brand_){
+    price=price_;
+    brand=brand_;
+  }
+ f1(){
+   print(price);
+   print(color);
+   
+ } 
+  f2(){
+    print("This is function two");
+  }
+}
+
+ 
+  void main(){
+   //Mobile obj1=new Mobile(1000,'black');
+  // obj1.f1();
+ //  Mobile obj2=new Mobile(2000,'White');
+ //  obj2.f2();
+   Mobile obj1=new Mobile(1000,'white','Samsung');
+ 
+   obj1.f1();
+   obj1.f2();
+   Mobile obj2=new Mobile.m1(price:2000,brand:'Redmi');
+   obj2.f1();
+   
+ }
+class Mobile{
+  int? price;
+  String? color;
+  String? brand;
+  
+Mobile(int price,String color,String brand){
+  this.price=price;
+   this.color=color;
+  this.brand=brand;
+ } 
+  Mobile.m1({int? price,String? brand}){
+    this.price=price;
+    this.brand=brand;
+  }
+ f1(){
+   print(price);
+   print(color);
+   print(brand);
+   
+ } 
+  f2(){
+    print("This is function two");
+  }
+}
+
+ 
+ 
+
+
+
+
+
+
